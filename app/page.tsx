@@ -20,7 +20,7 @@ export default function Home() {
                         <div className="flex items-center">
                             <Link href="/">
                                 <Image
-                                    src="/img/logo.png"
+                                    src="/img/logo.svg"
                                     alt="Taekwondo Dojang Logo"
                                     width={150}
                                     height={40}
