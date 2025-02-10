@@ -1,101 +1,149 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Menu } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen bg-background text-white font-dolceVita">
+      <header className="sticky top-0 z-50 w-full border-b border-[#72161D] bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 sm:h-20 items-center justify-between">
+            <div className="flex items-center">
+              <Link className="font-bold text-[#C1272D] text-lg sm:text-xl" href="/">
+                Taekwondo Dojang
+              </Link>
+            </div>
+            <nav className="flex items-center space-x-4">
+              <Link
+                href="#about"
+                className="hidden sm:inline-block text-[#72161D] hover:text-[#C1272D] transition-colors text-sm sm:text-base"
+              >
+                About Us
+              </Link>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="sm:hidden text-[#72161D] hover:text-white hover:bg-[#C1272D]"
+              >
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </nav>
+          </div>
         </div>
+      </header>
+
+      <main className="flex-1">
+        {/* Hero Section */}
+        <section className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh]">
+          <Image
+            src="/placeholder.svg?height=800&width=1200"
+            alt="Taekwondo practice"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-background bg-opacity-70 flex items-center justify-center">
+            <div className="text-center px-4 sm:px-6 lg:px-8">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
+                Welcome to Our Taekwondo Dojang
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl mb-8 text-gray-300">
+                Discover the Art of Korean Martial Arts
+              </p>
+              <Button size="lg" className="bg-[#C1272D] hover:bg-[#72161D] text-white text-base sm:text-lg px-6 py-3">
+                Join Now
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#72161D]">
+              About Our Dojang
+            </h2>
+            <p className="text-base sm:text-lg text-center max-w-3xl mx-auto text-gray-700">
+              Our Taekwondo dojang is dedicated to teaching the ancient Korean martial art of Taekwondo. We focus on
+              developing physical fitness, mental discipline, and self-defense skills in a supportive and challenging
+              environment.
+            </p>
+          </div>
+        </section>
+
+        {/* Classes Section */}
+        <section className="py-12 sm:py-16 lg:py-20 bg-gray-100">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#72161D]">
+              Our Classes
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="bg-white">
+                <CardHeader>
+                  <CardTitle className="text-[#72161D] text-lg sm:text-xl">Beginner's Class</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">Learn the basics of Taekwondo, including stances, blocks, and kicks.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white">
+                <CardHeader>
+                  <CardTitle className="text-[#72161D] text-lg sm:text-xl">Intermediate Class</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">Advance your skills with more complex techniques and forms.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white">
+                <CardHeader>
+                  <CardTitle className="text-[#72161D] text-lg sm:text-xl">Advanced Class</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-700">Master advanced techniques, sparring, and prepare for black belt.</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-12 sm:py-16 lg:py-20 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#72161D]">
+              Contact Us
+            </h2>
+            <div className="max-w-md mx-auto">
+              <p className="text-center mb-4 text-gray-700">
+                Visit us or get in touch to learn more about our Taekwondo classes.
+              </p>
+              <div className="text-center text-gray-700">
+                <p className="mb-2">
+                  <strong>Address:</strong> 123 Martial Arts St, City, State 12345
+                </p>
+                <p className="mb-2">
+                  <strong>Phone:</strong> (123) 456-7890
+                </p>
+                <p className="mb-4">
+                  <strong>Email:</strong> info@taekwondodojang.com
+                </p>
+                <Button className="bg-[#C1272D] hover:bg-[#72161D] text-white border border-[#C1272D] hover:border-[#72161D] text-base sm:text-lg px-6 py-3">
+                  Contact Us
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="py-6 bg-background text-gray-400 border-t border-[#72161D]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p>&copy; 2025 Taekwondo Dojang. All rights reserved.</p>
+        </div>
       </footer>
     </div>
-  );
+  )
 }
+
