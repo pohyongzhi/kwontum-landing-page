@@ -42,23 +42,33 @@ export default function Home() {
                     <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         We Are
                     </h2>
-                    <div className="flex flex-col sm:flex-row justify-center gap-10 text-center">
-                        <div className="flex flex-col items-center gap-4">
-                            <Award size={85} className="" />
-                            <p className="p-6 rounded-xl bg-kwontum-red text-white text-xl font-bold">
-                                PASSION-DRIVEN
+                    <div className="flex flex-col sm:flex-row justify-center gap-10">
+                        <div className="flex flex-col  gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-30 font-dolceVita font-bold max-w-[400px] shadow-md hover:scale-105 transition-transform">
+                            <Award size={50} className="" />
+                            <p className="text-2xl font-bold">PASSION-DRIVEN</p>
+                            <p className="text-gray-600 font-nanum">
+                                Fueled by dedication to excellence in every
+                                class we undertake
                             </p>
                         </div>
-                        <div className="flex flex-col items-center gap-4">
-                            <House size={85} className="" />
-                            <p className="p-6 rounded-xl bg-kwontum-red text-white text-xl font-bold">
+                        <div className="flex flex-col gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-30 font-dolceVita font-bold max-w-[400px] shadow-lg hover:scale-105 transition-transform">
+                            <House size={50} className="" />
+                            <p className="text-2xl font-bold">
                                 FAMILY-ORIENTED
                             </p>
+                            <p className="text-gray-600 font-nanum">
+                                Creating a supportive and nurturing environment
+                                for every student
+                            </p>
                         </div>
-                        <div className="flex flex-col items-center gap-4">
-                            <Star size={85} className="" />
-                            <p className="p-6 rounded-xl bg-kwontum-red text-white text-xl  font-bold">
-                                EXELLENCE-BOUND
+                        <div className="flex flex-col gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-30 font-dolceVita font-bold max-w-[400px] shadow-lg hover:scale-105 transition-transform">
+                            <Star size={50} className="" />
+                            <p className="text-2xl font-bold">
+                                EXCELLENCE-BOUND
+                            </p>
+                            <p className="text-gray-600 font-nanum">
+                                Committed to achieving the highest standards in
+                                martial arts training
                             </p>
                         </div>
                     </div>
@@ -72,14 +82,14 @@ export default function Home() {
                         Our Classes
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <Card className="bg-white">
+                        <Card className="bg-white ">
                             <CardHeader>
-                                <CardTitle className="text-[#72161D] text-lg sm:text-xl font-dolceVita">
+                                <CardTitle className="text-[#72161D] text-2xl font-dolceVita">
                                     Toddlers
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-700">
+                                <p className="text-gray-600 font-nanum">
                                     Learn the basics of Taekwondo, including
                                     stances, blocks, and kicks.
                                 </p>
@@ -87,12 +97,12 @@ export default function Home() {
                         </Card>
                         <Card className="bg-white">
                             <CardHeader>
-                                <CardTitle className="text-[#72161D] text-lg sm:text-xl font-dolceVita">
+                                <CardTitle className="text-[#72161D] text-2xl font-dolceVita">
                                     Teens & Adults
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-700">
+                                <p className="text-gray-600 font-nanum">
                                     Advance your skills with more complex
                                     techniques and forms.
                                 </p>
@@ -100,12 +110,12 @@ export default function Home() {
                         </Card>
                         <Card className="bg-white">
                             <CardHeader>
-                                <CardTitle className="text-[#72161D] text-lg sm:text-xl font-dolceVita">
+                                <CardTitle className="text-[#72161D] text-2xl font-dolceVita">
                                     Competition Class
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-700">
+                                <p className="text-gray-600 font-nanum">
                                     Master advanced techniques, sparring, and
                                     prepare for black belt.
                                 </p>
@@ -115,7 +125,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
+            <section id="about" className="py-12 sm:py-16 lg:py-28 bg-white">
                 <div className="flex flex-col px-4 sm:px-6 lg:px-8">
                     <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-gray-600 font-dolceVita">
                         READY TO KICKSTART YOUR JOURNEY?
