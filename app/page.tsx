@@ -37,9 +37,9 @@ export default function Home() {
                 </h2>
             </section>
 
-            <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
+            <section id="about" className="py-16 sm:py-20 lg:py-30 bg-white">
                 <div className="px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-6xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
+                    <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         We Are
                     </h2>
                     <div className="flex flex-col sm:flex-row justify-center gap-10 text-center">
@@ -68,7 +68,7 @@ export default function Home() {
             {/* Classes Section */}
             <section className="py-12 sm:py-16 lg:py-20 bg-gray-100">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#72161D] font-dolceVita">
+                    <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         Our Classes
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,6 +109,86 @@ export default function Home() {
                                     Master advanced techniques, sparring, and
                                     prepare for black belt.
                                 </p>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
+                <div className="flex flex-col px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-gray-600 font-dolceVita">
+                        READY TO KICKSTART YOUR JOURNEY?
+                    </h2>
+                    <a
+                        href="https://wa.me/6583154443?text=Hello%21%20Thank%20You%20For%20Reaching%20Out!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex justify-center"
+                    >
+                        <Button className="bg-[#C1272D] hover:bg-[#72161D] text-white border border-[#C1272D] hover:border-[#72161D] text-base sm:text-lg px-6 py-5 mt-5">
+                            BOOK FREE TRIAL
+                        </Button>
+                    </a>
+                </div>
+            </section>
+
+            <section className="py-12 sm:py-16 lg:py-20 bg-gray-100">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
+                        TESTIMONIALS
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <Card className="bg-white hover:shadow-lg transition-shadow">
+                            <CardContent className="pt-6">
+                                <blockquote className="text-gray-700 mb-4">
+                                    "The instructors are passionate and
+                                    dedicated. My child has grown so much in
+                                    confidence since joining."
+                                </blockquote>
+                                <footer className="text-left">
+                                    <p className="font-bold text-[#72161D]">
+                                        Sarah Chen
+                                    </p>
+                                    <p className="text-sm text-gray-600">
+                                        Parent of Tommy, 8 years old
+                                    </p>
+                                </footer>
+                            </CardContent>
+                        </Card>
+
+                        <Card className="bg-white hover:shadow-lg transition-shadow">
+                            <CardContent className="pt-6">
+                                <blockquote className="text-gray-700 mb-4">
+                                    "Great environment for learning. The focus
+                                    on fundamentals really helped improve my
+                                    technique."
+                                </blockquote>
+                                <footer className="text-left">
+                                    <p className="font-bold text-[#72161D]">
+                                        David Tan
+                                    </p>
+                                    <p className="text-sm text-gray-600">
+                                        Adult Student, 2 years
+                                    </p>
+                                </footer>
+                            </CardContent>
+                        </Card>
+
+                        <Card className="bg-white hover:shadow-lg transition-shadow">
+                            <CardContent className="pt-6">
+                                <blockquote className="text-gray-700 mb-4">
+                                    "The competition team training has pushed me
+                                    to achieve things I never thought possible."
+                                </blockquote>
+                                <footer className="text-left">
+                                    <p className="font-bold text-[#72161D]">
+                                        Michelle Lee
+                                    </p>
+                                    <p className="text-sm text-gray-600">
+                                        National Competitor
+                                    </p>
+                                </footer>
                             </CardContent>
                         </Card>
                     </div>
