@@ -1,9 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import type React from "react"; // Import React
-
-const inter = Inter({ subsets: ["latin"] });
+import type React from "react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: "Kwontum Taekwondo",
@@ -18,13 +17,17 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <head>
-                {/* <link
-                    href="https://fonts.cdnfonts.com/css/dolce-vita"
-                    rel="stylesheet"
-                /> */}
-            </head>
-            <body className={inter.className}>{children}</body>
+            <body className="min-h-screen bg-background">
+                <div className="relative max-w-screen-xl mx-auto sm:px-6 lg:px-8">
+                    <Header />
+                </div>
+                <main className="relative flex-grow font-nanum">
+                    {children}
+                </main>
+                <div className="relative mx-auto">
+                    <Footer />
+                </div>
+            </body>
         </html>
     );
 }
