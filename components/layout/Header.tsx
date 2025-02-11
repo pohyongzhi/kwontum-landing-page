@@ -9,10 +9,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header
-            className="flex items-center justify-between py-5 px-5 sm:px-0"
-            style={{ fontFamily: '"Inter", serif' }}
-        >
+        <header className="flex items-center justify-between py-5 px-5 sm:px-0 bg-white">
             <Link href="/" className="flex-shrink-0">
                 <Image
                     src="/img/logo.svg"
