@@ -31,9 +31,9 @@ export default function Home() {
 
             <section className="py-12 sm:py-16 lg:py-20 bg-gray-100">
                 <h2 className="text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-600 font-dolceVita">
-                    "DRIVEN BY FUNDAMENTALS,
+                    &quot;DRIVEN BY FUNDAMENTALS,
                     <br></br>
-                    DEFINED BY EXCELLENCE"
+                    DEFINED BY EXCELLENCE&quot;
                 </h2>
             </section>
 
@@ -142,9 +142,9 @@ export default function Home() {
                         <Card className="bg-white hover:shadow-lg transition-shadow">
                             <CardContent className="pt-6">
                                 <blockquote className="text-gray-700 mb-4">
-                                    "The instructors are passionate and
+                                    &ldquo;The instructors are passionate and
                                     dedicated. My child has grown so much in
-                                    confidence since joining."
+                                    confidence since joining.&ldquo;
                                 </blockquote>
                                 <footer className="text-left">
                                     <p className="font-bold text-[#72161D]">
@@ -160,9 +160,9 @@ export default function Home() {
                         <Card className="bg-white hover:shadow-lg transition-shadow">
                             <CardContent className="pt-6">
                                 <blockquote className="text-gray-700 mb-4">
-                                    "Great environment for learning. The focus
-                                    on fundamentals really helped improve my
-                                    technique."
+                                    &ldquo;Great environment for learning. The
+                                    focus on fundamentals really helped improve
+                                    my technique.&ldquo;
                                 </blockquote>
                                 <footer className="text-left">
                                     <p className="font-bold text-[#72161D]">
@@ -178,8 +178,9 @@ export default function Home() {
                         <Card className="bg-white hover:shadow-lg transition-shadow">
                             <CardContent className="pt-6">
                                 <blockquote className="text-gray-700 mb-4">
-                                    "The competition team training has pushed me
-                                    to achieve things I never thought possible."
+                                    &ldquo;The competition team training has
+                                    pushed me to achieve things I never thought
+                                    possible.&ldquo;
                                 </blockquote>
                                 <footer className="text-left">
                                     <p className="font-bold text-[#72161D]">

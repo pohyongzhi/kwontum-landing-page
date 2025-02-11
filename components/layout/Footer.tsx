@@ -7,7 +7,6 @@ import {
     Facebook,
     Instagram,
     Mail,
-    Linkedin,
     MapPin,
     Calendar,
     Clock,
