@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     title: "Kwontum Taekwondo",
     description:
         "Welcome to our Kwontum Taekwondo - Discover the Art of Korean Martial Arts",
+    icons: {
+        icon: [{ url: "/img/favicon.ico", sizes: "any" }],
+    },
 };
 
 export default function RootLayout({
