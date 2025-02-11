@@ -209,8 +209,8 @@ export default function Home() {
                         <div className="flex flex-col sm:flex-row justify-center items-center gap-8 p-8">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.640655882624!2d103.9164382!3d1.3921388000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3d0033a4247d%3A0xc7e1d03f20860ba7!2sKwontum%20Taekwondo!5e0!3m2!1sen!2ssg!4v1739209001781!5m2!1sen!2ssg"
-                                width="90%"
-                                height="200"
+                                width="350"
+                                height="250"
                                 className="rounded-[12px] border-0"
                                 loading="lazy"
                                 allowFullScreen={true}
@@ -223,9 +223,9 @@ export default function Home() {
                                     <strong>Address:</strong> 6 Tebing Lane
                                     #01-02A, Singapore 828835
                                 </p>
-                                <p className="mb-2">
+                                {/* <p className="mb-2">
                                     <strong>Phone:</strong> (123) 456-7890
-                                </p>
+                                </p> */}
                                 <p className="mb-4">
                                     <strong>Email:</strong> Hello@kwontum.com.sg
                                 </p>

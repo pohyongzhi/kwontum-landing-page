@@ -17,6 +17,10 @@ export default function Header() {
                     width={150}
                     height={80}
                     priority
+                    style={{
+                        filter: "invert(0)", // Prevent color inversion
+                        color: "white", // Fallback color
+                    }}
                 />
             </Link>
 
