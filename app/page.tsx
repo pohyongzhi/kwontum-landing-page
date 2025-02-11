@@ -199,9 +199,10 @@ export default function Home() {
             {/* Contact Section */}
             <section className="py-12 sm:py-16 lg:py-20 bg-white">
                 <div className="px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center text-[#72161D] font-dolceVita">
+                    <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         Contact Us
                     </h2>
+
                     <div className="gap-8">
                         <p className="text-center mb-4 text-gray-700">
                             VISIT US OR GET IN TOUCH VIA WHATSAPP TO LEARN MORE
@@ -218,7 +219,7 @@ export default function Home() {
                                 title="Kwontum Taekwondo Location"
                                 aria-label="Google Maps showing location of Kwontum Taekwondo"
                             />
-                            <div className="text-center text-gray-700">
+                            <div className="flex flex-col  text-start text-gray-700">
                                 <p className="mb-2">
                                     <strong>Address:</strong> 6 Tebing Lane
                                     #01-02A, Singapore 828835
@@ -233,6 +234,7 @@ export default function Home() {
                                     href="https://wa.me/6583154443?text=Hello%21%20Thank%20You%20For%20Reaching%20Out!"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    className="flex justify-center"
                                 >
                                     <Button className="bg-[#C1272D] hover:bg-[#72161D] text-white border border-[#C1272D] hover:border-[#72161D] text-base sm:text-lg px-6 py-3 mt-5">
                                         Contact Us
