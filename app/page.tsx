@@ -43,7 +43,7 @@ export default function Home() {
                         We Are
                     </h2>
                     <div className="flex flex-col sm:flex-row justify-center gap-10">
-                        <div className="flex flex-col  gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-30 font-dolceVita font-bold max-w-[400px] shadow-md hover:scale-105 transition-transform">
+                        <div className="flex flex-col  gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-50 font-dolceVita font-bold max-w-[400px] shadow-md hover:scale-105 transition-transform">
                             <Award size={50} className="" />
                             <p className="text-2xl font-bold">PASSION-DRIVEN</p>
                             <p className="text-gray-600 font-nanum">
@@ -51,7 +51,7 @@ export default function Home() {
                                 class we undertake
                             </p>
                         </div>
-                        <div className="flex flex-col gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-30 font-dolceVita font-bold max-w-[400px] shadow-lg hover:scale-105 transition-transform">
+                        <div className="flex flex-col gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-50 font-dolceVita font-bold max-w-[400px] shadow-lg hover:scale-105 transition-transform">
                             <House size={50} className="" />
                             <p className="text-2xl font-bold">
                                 FAMILY-ORIENTED
@@ -61,7 +61,7 @@ export default function Home() {
                                 for every student
                             </p>
                         </div>
-                        <div className="flex flex-col gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-30 font-dolceVita font-bold max-w-[400px] shadow-lg hover:scale-105 transition-transform">
+                        <div className="flex flex-col gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-50 font-dolceVita font-bold max-w-[400px] shadow-lg hover:scale-105 transition-transform">
                             <Star size={50} className="" />
                             <p className="text-2xl font-bold">
                                 EXCELLENCE-BOUND
