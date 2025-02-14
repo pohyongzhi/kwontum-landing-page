@@ -4,15 +4,16 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Award, House, Star } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ThemeToggle from "@/components/ThemeToggle"; // Import the ThemeToggle component
+import TestimonialCarousel from "@/components/TestimonialCarousel"; // Import the TestimonialCarousel component
 
 export default function Home() {
     return (
         <>
 
         {/* Position the ThemeToggle at the top-right */}
-        <div className="fixed top-4 right-4 z-50">
+        {/* <div className="fixed top-4 right-4 z-50">
             <ThemeToggle />
-        </div>
+        </div> */}
         
             <section>
                 <div className="flex items-center justify-center m-40 xs:m-50 lg:m-60">
@@ -150,7 +151,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-12 sm:py-16 lg:py-20 bg-gray-100 dark:bg-gray-800">
+            {/* <section className="py-12 sm:py-16 lg:py-20 bg-gray-100 dark:bg-gray-800">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         TESTIMONIALS
@@ -322,7 +323,7 @@ export default function Home() {
 
                     </div>
 
-                        {/* Footer Note */}
+                        // Footer
                         <div className="mt-12 text-left text-sm text-gray-600 dark:text-gray-400 italic">
                         <p>
                             The testimonials are provided on a voluntary basis and are published
@@ -332,7 +333,8 @@ export default function Home() {
                         </div> 
 
                 </div>
-            </section>
+            </section> */}
+            <TestimonialCarousel />
 
             {/* Contact Section */}
             <section className="py-12 sm:py-16 lg:py-20 bg-white dark:bg-gray-900">
