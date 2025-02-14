@@ -1,3 +1,7 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -60,6 +64,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    @apply bg-white text-black dark:bg-gray-900 dark:text-white;
 }
 
 @layer utilities {
@@ -131,4 +136,18 @@ body {
     body {
         @apply bg-background text-foreground;
     }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #c1272d; /* Change to your desired color */
+}
+.swiper-pagination-bullet {
+    background-color: #c1272d; /* Change to your desired color */
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #c1272d; /* You can use a different color for the active bullet if needed */
+    opacity: 1;
 }
