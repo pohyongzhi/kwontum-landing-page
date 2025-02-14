@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Award, House, Star } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import ThemeToggle from "@/components/ThemeToggle"; // Import the ThemeToggle component
+//import ThemeToggle from "@/components/ThemeToggle"; // Import the ThemeToggle component
 import TestimonialCarousel from "@/components/TestimonialCarousel"; // Import the TestimonialCarousel component
 
 export default function Home() {
