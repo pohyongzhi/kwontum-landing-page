@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import type React from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ThemeProvider } from "next-themes"; // For dark mode
 
 export const metadata: Metadata = {
     title: "Kwontum Taekwondo",
@@ -22,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="min-h-screen bg-background">
-                <ThemeProvider attribute="class" defaultTheme="light">
+                {/* <ThemeProvider attribute="class" defaultTheme="light"> */}
                 <div className="relative max-w-screen-xl mx-auto sm:px-6 lg:px-8">
                     <Header />
                 </div>
@@ -32,7 +31,7 @@ export default function RootLayout({
                 <div className="relative mx-auto">
                     <Footer />
                 </div>
-                </ThemeProvider>
+                {/* </ThemeProvider> */}
             </body>
         </html>
     );
