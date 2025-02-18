@@ -7,11 +7,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function Home() {
     return (
         <>
+            {/* Position the ThemeToggle at the top-right */}
+            {/* <div className="fixed top-4 right-4 z-50">
+            <ThemeToggle />
+        </div> */}
+
             <section>
                 <div className="flex items-center justify-center m-40 xs:m-50 lg:m-60">
                     <div className="text-center px-4 sm:px-6 lg:px-8">
                         <h1 className="text-6xl xs:7xl lg:text-8xl font-bold font-dolceVita mb-4 text-kwontum-darkRed">
-                            WE ARE KWONTUM.
+                            WE ARE KWONTUM!
                         </h1>
                         <a
                             href="https://wa.me/6583154443?text=Hello%21%20Thank%20You%20For%20Reaching%20Out!"
@@ -29,7 +34,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-12 sm:py-16 lg:py-20 bg-gray-100">
+            <section className="py-12 sm:py-16 lg:py-20 bg-gray-100 dark:bg-gray-800">
                 <h2 className="text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-600 font-dolceVita">
                     &quot;DRIVEN BY FUNDAMENTALS,
                     <br></br>
@@ -37,28 +42,41 @@ export default function Home() {
                 </h2>
             </section>
 
-            <section id="about" className="py-16 sm:py-20 lg:py-30 bg-white">
+            <section
+                id="about"
+                className="py-16 sm:py-20 lg:py-30 bg-white dark:bg-gray-950"
+            >
                 <div className="px-4 sm:px-6 lg:px-8">
                     <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         We Are
                     </h2>
-                    <div className="flex flex-col sm:flex-row justify-center gap-10 text-center">
-                        <div className="flex flex-col items-center gap-4">
-                            <Award size={85} className="" />
-                            <p className="p-6 rounded-xl bg-kwontum-red text-white text-xl font-bold">
-                                PASSION-DRIVEN
+                    <div className="flex flex-col sm:flex-row justify-center gap-10">
+                        <div className="flex flex-col  gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-50 font-dolceVita font-bold max-w-[400px] shadow-md hover:scale-105 transition-transform dark:bg-gray-900">
+                            <Award size={50} className="" />
+                            <p className="text-2xl font-bold">PASSION-DRIVEN</p>
+                            <p className="text-gray-600 font-nanum">
+                                Fueled by dedication to excellence in every
+                                class we undertake
                             </p>
                         </div>
-                        <div className="flex flex-col items-center gap-4">
-                            <House size={85} className="" />
-                            <p className="p-6 rounded-xl bg-kwontum-red text-white text-xl font-bold">
+                        <div className="flex flex-col gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-50 font-dolceVita font-bold max-w-[400px] shadow-lg hover:scale-105 transition-transform dark:bg-gray-900">
+                            <House size={50} className="" />
+                            <p className="text-2xl font-bold">
                                 FAMILY-ORIENTED
                             </p>
+                            <p className="text-gray-600 font-nanum">
+                                Creating a supportive and nurturing environment
+                                for every student
+                            </p>
                         </div>
-                        <div className="flex flex-col items-center gap-4">
-                            <Star size={85} className="" />
-                            <p className="p-6 rounded-xl bg-kwontum-red text-white text-xl  font-bold">
-                                EXELLENCE-BOUND
+                        <div className="flex flex-col gap-4 py-6 px-10 rounded-2xl border border-kwontum-darkRed border-opacity-50 font-dolceVita font-bold max-w-[400px] shadow-lg hover:scale-105 transition-transform dark:bg-gray-900">
+                            <Star size={50} className="" />
+                            <p className="text-2xl font-bold">
+                                EXCELLENCE-BOUND
+                            </p>
+                            <p className="text-gray-600 font-nanum">
+                                Committed to achieving the highest standards in
+                                martial arts training
                             </p>
                         </div>
                     </div>
@@ -66,46 +84,46 @@ export default function Home() {
             </section>
 
             {/* Classes Section */}
-            <section className="py-12 sm:py-16 lg:py-20 bg-gray-100">
+            <section className="py-12 sm:py-16 lg:py-20 bg-gray-100 dark:bg-gray-800">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         Our Classes
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <Card className="bg-white">
+                        <Card className="bg-white dark:bg-gray-900 ">
                             <CardHeader>
-                                <CardTitle className="text-[#72161D] text-lg sm:text-xl font-dolceVita">
+                                <CardTitle className="text-[#72161D] text-2xl font-dolceVita">
                                     Toddlers
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-700">
+                                <p className="text-gray-600 font-nanum">
                                     Learn the basics of Taekwondo, including
                                     stances, blocks, and kicks.
                                 </p>
                             </CardContent>
                         </Card>
-                        <Card className="bg-white">
+                        <Card className="bg-white dark:bg-gray-900">
                             <CardHeader>
-                                <CardTitle className="text-[#72161D] text-lg sm:text-xl font-dolceVita">
+                                <CardTitle className="text-[#72161D] text-2xl font-dolceVita">
                                     Teens & Adults
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-700">
+                                <p className="text-gray-600 font-nanum">
                                     Advance your skills with more complex
                                     techniques and forms.
                                 </p>
                             </CardContent>
                         </Card>
-                        <Card className="bg-white">
+                        <Card className="bg-white dark:bg-gray-900">
                             <CardHeader>
-                                <CardTitle className="text-[#72161D] text-lg sm:text-xl font-dolceVita">
+                                <CardTitle className="text-[#72161D] text-2xl font-dolceVita">
                                     Competition Class
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-700">
+                                <p className="text-gray-600 font-nanum">
                                     Master advanced techniques, sparring, and
                                     prepare for black belt.
                                 </p>
@@ -115,7 +133,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
+            <section
+                id="about"
+                className="py-12 sm:py-16 lg:py-28 bg-white dark:bg-gray-900"
+            >
                 <div className="flex flex-col px-4 sm:px-6 lg:px-8">
                     <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-gray-600 font-dolceVita">
                         READY TO KICKSTART YOUR JOURNEY?
@@ -133,61 +154,89 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-12 sm:py-16 lg:py-20 bg-gray-100">
+            <section className="py-12 sm:py-16 lg:py-20 bg-gray-100 dark:bg-gray-800">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         TESTIMONIALS
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <Card className="bg-white hover:shadow-lg transition-shadow">
+                        <Card className="bg-white hover:shadow-lg transition-shadow dark:bg-gray-900 border-2 border-[#72161D] rounded-xl">
                             <CardContent className="pt-6">
-                                <blockquote className="text-gray-700 mb-4">
-                                    &ldquo;The instructors are passionate and
-                                    dedicated. My child has grown so much in
-                                    confidence since joining.&ldquo;
+                                <blockquote className="text-gray-700 dark:text-white italic">
+                                    &ldquo;Kwontum feels more like a family than
+                                    just a school. Even though I&ldquo;ve only
+                                    recently joined, I&ldquo;ve felt so welcomed
+                                    and accepted, regardless of age differences
+                                    or how short a time I&ldquo;ve been here. I
+                                    was genuinely touched when the members came
+                                    to support me during NSG. Ben Sir strikes
+                                    the perfect balance between humor and
+                                    strictness. He&ldquo;s incredibly detailed
+                                    and takes the time to explain his training
+                                    plans to each student. His personalized
+                                    approach and dedication make training both
+                                    fun and effective.&ldquo;
                                 </blockquote>
-                                <footer className="text-left">
+                                <footer className="text-left mt-4">
                                     <p className="font-bold text-[#72161D]">
-                                        Sarah Chen
+                                        Kallie Tan
                                     </p>
-                                    <p className="text-sm text-gray-600">
-                                        Parent of Tommy, 8 years old
+                                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                                        14 years old
                                     </p>
                                 </footer>
                             </CardContent>
                         </Card>
 
-                        <Card className="bg-white hover:shadow-lg transition-shadow">
+                        <Card className="bg-white hover:shadow-lg transition-shadow dark:bg-gray-900 border-2 border-[#72161D] rounded-xl">
                             <CardContent className="pt-6">
-                                <blockquote className="text-gray-700 mb-4">
-                                    &ldquo;Great environment for learning. The
-                                    focus on fundamentals really helped improve
-                                    my technique.&ldquo;
+                                <blockquote className="text-gray-700 dark:text-white italic">
+                                    &ldquo;I would like to give credit to
+                                    Kwontum for its exceptional professional
+                                    kyorugi training that is hard to find
+                                    elsewhere. One of the standout features is
+                                    their ability to match students with
+                                    training partners of similar build for
+                                    Kallie to ensure she can have effective
+                                    practice sessions. Coach Ben&ldquo;s
+                                    approach to individualized training
+                                    prescriptions is another highlight. His
+                                    tailored coaching methods for his student
+                                    unique need and strengths set him apart from
+                                    others that rely on one-size-fits-all
+                                    training programs.&ldquo;
                                 </blockquote>
-                                <footer className="text-left">
+                                <footer className="text-left mt-4">
                                     <p className="font-bold text-[#72161D]">
-                                        David Tan
+                                        Nicholas Tan
                                     </p>
-                                    <p className="text-sm text-gray-600">
-                                        Adult Student, 2 years
+                                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                                        Parent of Kallie Tan, 14 years old
                                     </p>
                                 </footer>
                             </CardContent>
                         </Card>
 
-                        <Card className="bg-white hover:shadow-lg transition-shadow">
+                        <Card className="bg-white hover:shadow-lg transition-shadow dark:bg-gray-900 border-2 border-[#72161D] rounded-xl">
                             <CardContent className="pt-6">
-                                <blockquote className="text-gray-700 mb-4">
-                                    &ldquo;The competition team training has
-                                    pushed me to achieve things I never thought
-                                    possible.&ldquo;
+                                <blockquote className="text-gray-700 dark:text-white italic">
+                                    &ldquo;Coach Ben is great in many ways. He
+                                    explains complicated concepts in ways I can
+                                    understand and teaches them in a way I’m
+                                    able to learn, apply, and practice in
+                                    training sessions The people at Kwontum are
+                                    also really nice and helpful. They&ldquo;re
+                                    all experienced and skillful players.
+                                    Everytime I spar or partner with them,
+                                    I&ldquo;ll be able to learn with every
+                                    engagement.&ldquo;
                                 </blockquote>
-                                <footer className="text-left">
+                                <footer className="text-left mt-4">
                                     <p className="font-bold text-[#72161D]">
-                                        Michelle Lee
+                                        Soren Yeow
                                     </p>
-                                    <p className="text-sm text-gray-600">
-                                        National Competitor
+                                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                                        14 years old
                                     </p>
                                 </footer>
                             </CardContent>
@@ -196,8 +245,10 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* <TestimonialCarousel /> */}
+
             {/* Contact Section */}
-            <section className="py-12 sm:py-16 lg:py-20 bg-white">
+            <section className="py-12 sm:py-16 lg:py-20 bg-white dark:bg-gray-900">
                 <div className="px-4 sm:px-6 lg:px-8">
                     <h2 className="text-5xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-center text-[#72161D] font-dolceVita">
                         Contact Us
